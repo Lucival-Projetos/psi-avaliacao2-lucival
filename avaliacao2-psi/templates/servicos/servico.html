@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block titulo %}Detalhes{% endblock %}
+{% block conteudo %}
+    <h2>{{servico['descricao']}}</h2>
+    <p>Categoria: {{servico['categoria']}}</p>
+    <p>Prazo: {{servico['prazo']}}</p>
+    <p>Valor: R$ {{servico['valor']}}</p>
+    <a href='/'>Voltar para a oficina</a>
+{% endblock %}
